@@ -13,12 +13,17 @@ class FirstPageViewController: UIViewController {
         super.viewDidLoad()
         title = "First Screen"
         self.navigationItem.title = "Baslik 2"
+        navigationItem.prompt = "Prompt 2"
+        let rightBar = UIBarButtonItem(title: "Action 2", style: .done, target: self, action: #selector (rightBarButtonAction))
+        navigationItem.rightBarButtonItem = rightBar
         
-
-        // Do any additional setup after loading the view.
+        }
+                                             
+    @objc func rightBarButtonAction() {
+        // Action for the button
+        print("Right bar button 2 item tapped")
     }
 
-    
     /*
     // MARK: - Navigation
 

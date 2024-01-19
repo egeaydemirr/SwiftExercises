@@ -13,6 +13,7 @@ class SecondPageViewController: UIViewController {
         super.viewDidLoad()
         title = "Second Screen"
         navigationItem.title = "Baslik 3"
+        navigationItem.prompt = "Prompt 3"
 
         // Do any additional setup after loading the view.
     }
