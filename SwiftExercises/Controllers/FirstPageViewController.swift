@@ -8,6 +8,8 @@
 import UIKit
 
 class FirstPageViewController: UIViewController {
+    @IBOutlet weak var label2: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ class FirstPageViewController: UIViewController {
         navigationItem.prompt = "Prompt 2"
         let rightBar = UIBarButtonItem(title: "Action 2", style: .done, target: self, action: #selector (rightBarButtonAction))
         navigationItem.rightBarButtonItem = rightBar
-        
+       
         }
                                              
     @objc func rightBarButtonAction() {

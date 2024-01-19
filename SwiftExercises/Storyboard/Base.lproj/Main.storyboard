@@ -16,9 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xR-2c-hGY">
-                                <rect key="frame" x="137" y="672" width="118" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-4i-zk1">
+                                <rect key="frame" x="100" y="230" width="193" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xR-2c-hGY">
+                                <rect key="frame" x="138" y="707" width="117.66666666666669" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Page">
                                     <backgroundConfiguration key="background" cornerRadius="8">
@@ -35,6 +40,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8xR-2c-hGY" secondAttribute="bottom" constant="73" id="Auo-QL-vKp"/>
+                            <constraint firstItem="8xR-2c-hGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="Jld-SA-buW"/>
+                            <constraint firstItem="t0N-4i-zk1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="P0q-VI-I2q"/>
+                            <constraint firstItem="8xR-2c-hGY" firstAttribute="centerX" secondItem="t0N-4i-zk1" secondAttribute="centerX" id="SOp-Sb-xq8"/>
+                            <constraint firstItem="t0N-4i-zk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f5e-05-znv"/>
+                            <constraint firstItem="t0N-4i-zk1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="phU-8F-hcq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7bI-aj-Pzu"/>
                 </viewController>
@@ -73,9 +86,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcp-QF-ety">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcp-QF-ety">
                                 <rect key="frame" x="137" y="668" width="118" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Page">
                                     <backgroundConfiguration key="background" cornerRadius="8">
@@ -85,9 +97,23 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-sp-WLC">
+                                <rect key="frame" x="175" y="214" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0IO-gl-fbU"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="wcp-QF-ety" firstAttribute="leading" secondItem="0IO-gl-fbU" secondAttribute="leading" constant="137" id="Oeu-Zu-n0g"/>
+                            <constraint firstItem="wcp-QF-ety" firstAttribute="centerX" secondItem="3dF-sp-WLC" secondAttribute="centerX" id="elI-Ti-hw3"/>
+                            <constraint firstItem="3dF-sp-WLC" firstAttribute="centerX" secondItem="ePg-Di-DiG" secondAttribute="centerX" id="j2g-f5-W2L"/>
+                            <constraint firstItem="3dF-sp-WLC" firstAttribute="leading" secondItem="0IO-gl-fbU" secondAttribute="leading" constant="175" id="mNA-Dl-Ppn"/>
+                            <constraint firstItem="3dF-sp-WLC" firstAttribute="top" secondItem="0IO-gl-fbU" secondAttribute="top" constant="59" id="psj-TZ-U4T"/>
+                            <constraint firstItem="0IO-gl-fbU" firstAttribute="bottom" secondItem="wcp-QF-ety" secondAttribute="bottom" constant="112" id="vbf-LY-zre"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4D3-Wj-eWs"/>
                 </viewController>

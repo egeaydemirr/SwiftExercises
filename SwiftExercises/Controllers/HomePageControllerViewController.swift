@@ -8,14 +8,15 @@
 import UIKit
 
 class HomePageControllerViewController: UIViewController {
+    @IBOutlet weak var label1: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home Screen"
         navigationItem.title = "Baslik 1"
         navigationItem.prompt = "Prompt 1"
-        let rightBarButton = UIBarButtonItem(title: "Action 1", style: .plain, target: self, action: #selector(rightBarButtonAction))
-        navigationItem.rightBarButtonItem = rightBarButton
+        configUi()
+
         
         // Do any additional setup after loading the view.
     }
@@ -24,7 +25,14 @@ class HomePageControllerViewController: UIViewController {
         // Action for the button
         print("Right bar button 1 item tapped")
     }
-
+    @objc func configUi() {
+        let rightBarButton = UIBarButtonItem(title: "Action 1", style: .plain, target: self, action: #selector(rightBarButtonAction))
+        navigationItem.rightBarButtonItem = rightBarButton
+        label1?.text = "TEXT 1"
+        label1?.textColor = UIColor.white
+        label1?.textAlignment = .center
+    }
+    
     /*
     // MARK: - Navigation
 
