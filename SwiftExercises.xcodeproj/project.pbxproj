@@ -13,8 +13,10 @@
 		181CA02D2B5A85D80078E0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181CA02B2B5A85D80078E0D0 /* Main.storyboard */; };
 		181CA02F2B5A85D90078E0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181CA02E2B5A85D90078E0D0 /* Assets.xcassets */; };
 		181CA0322B5A85D90078E0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181CA0302B5A85D90078E0D0 /* LaunchScreen.storyboard */; };
-		181CA03C2B5A86320078E0D0 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181CA03B2B5A86320078E0D0 /* FirstPage.storyboard */; };
 		181CA0422B5A8FF70078E0D0 /* HomePageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */; };
+		187B5A592B5AA997008E1786 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B5A582B5AA997008E1786 /* FirstPageViewController.swift */; };
+		187B5A5B2B5B0AE6008E1786 /* InitialStrbrd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B5A5A2B5B0AE6008E1786 /* InitialStrbrd.storyboard */; };
+		187B5A5D2B5B0B32008E1786 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		181CA02E2B5A85D90078E0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181CA0312B5A85D90078E0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181CA0332B5A85D90078E0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		181CA03B2B5A86320078E0D0 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageControllerViewController.swift; sourceTree = "<group>"; };
+		187B5A582B5AA997008E1786 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		187B5A5A2B5B0AE6008E1786 /* InitialStrbrd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialStrbrd.storyboard; sourceTree = "<group>"; };
+		187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				181CA02B2B5A85D80078E0D0 /* Main.storyboard */,
-				181CA03B2B5A86320078E0D0 /* FirstPage.storyboard */,
+				187B5A5A2B5B0AE6008E1786 /* InitialStrbrd.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */,
+				187B5A582B5AA997008E1786 /* FirstPageViewController.swift */,
+				187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,9 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181CA03C2B5A86320078E0D0 /* FirstPage.storyboard in Resources */,
 				181CA0322B5A85D90078E0D0 /* LaunchScreen.storyboard in Resources */,
 				181CA02F2B5A85D90078E0D0 /* Assets.xcassets in Resources */,
+				187B5A5B2B5B0AE6008E1786 /* InitialStrbrd.storyboard in Resources */,
 				181CA02D2B5A85D80078E0D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +169,8 @@
 			files = (
 				181CA02A2B5A85D80078E0D0 /* ViewController.swift in Sources */,
 				181CA0262B5A85D80078E0D0 /* AppDelegate.swift in Sources */,
+				187B5A592B5AA997008E1786 /* FirstPageViewController.swift in Sources */,
+				187B5A5D2B5B0B32008E1786 /* SecondPageViewController.swift in Sources */,
 				181CA0422B5A8FF70078E0D0 /* HomePageControllerViewController.swift in Sources */,
 				181CA0282B5A85D80078E0D0 /* SceneDelegate.swift in Sources */,
 			);

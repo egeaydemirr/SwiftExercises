@@ -28,7 +28,8 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="3PB-GL-JRK" kind="show" id="9im-20-PQC"/>
+                                    <action selector="firstBtn:" destination="J2G-iV-IC5" eventType="touchUpInside" id="qbE-4a-kaS"/>
+                                    <segue destination="3PB-GL-JRK" kind="show" id="BYA-TJ-cVW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +39,7 @@
                     <navigationItem key="navigationItem" id="7bI-aj-Pzu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="J2G-iV-IC5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="921.37404580152668" y="3.5211267605633805"/>
         </scene>
@@ -63,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="-5.343511450381679" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--First Page View Controller-->
         <scene sceneID="O0T-iU-6SN">
             <objects>
-                <viewController id="3PB-GL-JRK" sceneMemberID="viewController">
+                <viewController id="3PB-GL-JRK" customClass="FirstPageViewController" customModule="SwiftExercises" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePg-Di-DiG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,10 +98,10 @@
     </scenes>
     <resources>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

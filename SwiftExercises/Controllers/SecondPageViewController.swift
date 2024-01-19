@@ -1,5 +1,5 @@
 //
-//  HomePageControllerViewController.swift
+//  SecondPageViewController.swift
 //  SwiftExercises
 //
 //  Created by Ege Aydemir on 19.01.2024.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomePageControllerViewController: UIViewController {
+class SecondPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home Screen"
-        navigationItem.title = "Baslik 1"
+        title = "Second Screen"
+        navigationItem.title = "Baslik 3"
 
         // Do any additional setup after loading the view.
     }
