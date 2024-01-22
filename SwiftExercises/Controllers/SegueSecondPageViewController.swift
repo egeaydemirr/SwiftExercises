@@ -16,12 +16,13 @@ class SegueSecondPageViewController: UIViewController {
 
     
     @IBOutlet weak var lblSegue2: UILabel!
+    var name = ""
     
     func config() {
         title = "Segue Second Page"
         navigationItem.title = "Segue Second Page"
         navigationItem.prompt = "Segue 2 Prompt"
-        lblSegue2.text = "Segue 2 Label"
+        lblSegue2.text = "Adiniz: \(name)"
         lblSegue2.textColor = UIColor.white
         lblSegue2.font = UIFont.systemFont(ofSize: 36)
     }

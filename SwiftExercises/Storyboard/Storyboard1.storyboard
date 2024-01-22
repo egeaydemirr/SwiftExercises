@@ -34,7 +34,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="j3j-P8-1KH" kind="show" id="Muw-FR-FqH"/>
+                                    <segue destination="j3j-P8-1KH" kind="show" identifier="allVC" id="Muw-FR-FqH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-Va-zoE">
@@ -59,6 +59,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="saveBtnClicked:" destination="wnE-qu-PCv" eventType="touchUpInside" id="Ofd-9L-kVg"/>
+                                    <segue destination="j3j-P8-1KH" kind="show" id="Ecf-1h-yOW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,6 +82,7 @@
                     <connections>
                         <outlet property="btnSave" destination="vN5-uo-8IR" id="60Y-tM-9gS"/>
                         <outlet property="lbl1Segue" destination="wwG-Va-zoE" id="nuF-oj-1SE"/>
+                        <outlet property="txtFieldName" destination="8f1-uV-Kgx" id="TPO-Uv-xpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exq-hc-y2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -164,6 +166,9 @@
             <point key="canvasLocation" x="1857.2519083969464" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Muw-FR-FqH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

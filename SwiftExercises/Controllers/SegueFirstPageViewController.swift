@@ -10,6 +10,8 @@ import UIKit
 class SegueFirstPageController: UIViewController {
     @IBOutlet weak var lbl1Segue: UILabel!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var txtFieldName: UITextField!
+    var username: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,20 @@ class SegueFirstPageController: UIViewController {
     }
 
     @IBAction func saveBtnClicked(_ sender: Any) {
-        print("Save Button Clicked")
+        username = txtFieldName.text
+        performSegue(withIdentifier: "allVC", sender: nil)
+
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "allVC") {
+            if let destinationVC = segue.destination as? SegueSecondPageViewController {
+                destinationVC.name = username ?? ""
+            }
+        }
+    }
+    
+
     /*
     // MARK: - Navigation
 
