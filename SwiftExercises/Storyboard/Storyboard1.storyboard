@@ -38,30 +38,48 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-Va-zoE">
-                                <rect key="frame" x="68" y="389" width="250" height="75"/>
+                                <rect key="frame" x="68" y="389" width="250" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="LtE-Nu-yCj"/>
+                                    <constraint firstAttribute="height" constant="25" id="LtE-Nu-yCj"/>
                                     <constraint firstAttribute="width" constant="250" id="kUW-jC-d3T"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8f1-uV-Kgx">
+                                <rect key="frame" x="118" y="439" width="158" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN5-uo-8IR">
+                                <rect key="frame" x="144" y="506" width="99" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="saveBtnClicked:" destination="wnE-qu-PCv" eventType="touchUpInside" id="Ofd-9L-kVg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XFm-sA-FGG"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="wwG-Va-zoE" firstAttribute="leading" secondItem="XFm-sA-FGG" secondAttribute="leading" constant="68" id="6Qi-vn-pQw"/>
+                            <constraint firstItem="8f1-uV-Kgx" firstAttribute="top" secondItem="wwG-Va-zoE" secondAttribute="bottom" constant="25" id="7Jr-06-okz"/>
                             <constraint firstItem="wwG-Va-zoE" firstAttribute="top" secondItem="Awv-yU-0TA" secondAttribute="bottom" constant="190.66666666666666" id="NYb-Q6-vpK"/>
                             <constraint firstItem="XFm-sA-FGG" firstAttribute="bottom" secondItem="Awv-yU-0TA" secondAttribute="bottom" constant="650" id="OZU-A9-RQH"/>
                             <constraint firstItem="XFm-sA-FGG" firstAttribute="trailing" secondItem="Awv-yU-0TA" secondAttribute="trailing" constant="100" id="TWm-Ij-50i"/>
                             <constraint firstItem="Awv-yU-0TA" firstAttribute="top" secondItem="XFm-sA-FGG" secondAttribute="top" constant="75" id="UXg-aY-Cw7"/>
                             <constraint firstItem="XFm-sA-FGG" firstAttribute="trailing" secondItem="wwG-Va-zoE" secondAttribute="trailing" constant="75" id="fSV-V5-EhP"/>
+                            <constraint firstItem="8f1-uV-Kgx" firstAttribute="leading" secondItem="XFm-sA-FGG" secondAttribute="leading" constant="118" id="jmh-hm-2oX"/>
                             <constraint firstItem="Awv-yU-0TA" firstAttribute="leading" secondItem="XFm-sA-FGG" secondAttribute="leading" constant="100" id="jtf-jV-84D"/>
+                            <constraint firstItem="XFm-sA-FGG" firstAttribute="trailing" secondItem="8f1-uV-Kgx" secondAttribute="trailing" constant="117" id="of3-Vr-RmB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hms-R6-0io"/>
                     <connections>
+                        <outlet property="btnSave" destination="vN5-uo-8IR" id="60Y-tM-9gS"/>
                         <outlet property="lbl1Segue" destination="wwG-Va-zoE" id="nuF-oj-1SE"/>
                     </connections>
                 </viewController>
