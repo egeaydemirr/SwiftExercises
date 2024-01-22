@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second Page View Controller-->
+        <!--Segue First Page Controller-->
         <scene sceneID="gTg-d8-HGq">
             <objects>
-                <viewController id="wnE-qu-PCv" customClass="SecondPageViewController" customModule="SwiftExercises" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wnE-qu-PCv" customClass="SegueFirstPageController" customModule="SwiftExercises" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="DEa-lU-Z11">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-JT-XKc">
-                                <rect key="frame" x="122" y="675" width="118" height="38"/>
+                                <rect key="frame" x="137" y="693" width="118" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Page">
@@ -37,9 +37,12 @@
                                     <segue destination="j3j-P8-1KH" kind="show" id="Muw-FR-FqH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="asjdlhflakdsjglkajdsg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-kW-b0O">
-                                <rect key="frame" x="160" y="376" width="158" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-Va-zoE">
+                                <rect key="frame" x="68" y="389" width="250" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="LtE-Nu-yCj"/>
+                                    <constraint firstAttribute="width" constant="250" id="kUW-jC-d3T"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,34 +51,40 @@
                         <viewLayoutGuide key="safeArea" id="XFm-sA-FGG"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="wwG-Va-zoE" firstAttribute="leading" secondItem="XFm-sA-FGG" secondAttribute="leading" constant="68" id="6Qi-vn-pQw"/>
+                            <constraint firstItem="wwG-Va-zoE" firstAttribute="top" secondItem="Awv-yU-0TA" secondAttribute="bottom" constant="190.66666666666666" id="NYb-Q6-vpK"/>
                             <constraint firstItem="XFm-sA-FGG" firstAttribute="bottom" secondItem="Awv-yU-0TA" secondAttribute="bottom" constant="650" id="OZU-A9-RQH"/>
                             <constraint firstItem="XFm-sA-FGG" firstAttribute="trailing" secondItem="Awv-yU-0TA" secondAttribute="trailing" constant="100" id="TWm-Ij-50i"/>
                             <constraint firstItem="Awv-yU-0TA" firstAttribute="top" secondItem="XFm-sA-FGG" secondAttribute="top" constant="75" id="UXg-aY-Cw7"/>
+                            <constraint firstItem="XFm-sA-FGG" firstAttribute="trailing" secondItem="wwG-Va-zoE" secondAttribute="trailing" constant="75" id="fSV-V5-EhP"/>
                             <constraint firstItem="Awv-yU-0TA" firstAttribute="leading" secondItem="XFm-sA-FGG" secondAttribute="leading" constant="100" id="jtf-jV-84D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hms-R6-0io"/>
+                    <connections>
+                        <outlet property="lbl1Segue" destination="wwG-Va-zoE" id="nuF-oj-1SE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exq-hc-y2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2783.969465648855" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Segue Second Page View Controller-->
         <scene sceneID="eYb-zJ-Ptz">
             <objects>
-                <viewController id="j3j-P8-1KH" sceneMemberID="viewController">
+                <viewController id="j3j-P8-1KH" customClass="SegueSecondPageViewController" customModule="SwiftExercises" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="rlw-f3-U04">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-9U-elp">
-                                <rect key="frame" x="100" y="178" width="193" height="20.333333333333343"/>
+                                <rect key="frame" x="100" y="178" width="194" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wk-7N-njW">
-                                <rect key="frame" x="137" y="682" width="118" height="38"/>
+                                <rect key="frame" x="138.33333333333337" y="698.33333333333337" width="117.66666666666663" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Page">
@@ -86,17 +95,33 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09E-tm-N9O">
+                                <rect key="frame" x="72" y="373.33333333333331" width="250" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5it-oV-T7U"/>
+                                    <constraint firstAttribute="height" constant="75" id="MuS-9N-A7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rud-Fa-RFh"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="rud-Fa-RFh" firstAttribute="bottom" secondItem="m5s-9U-elp" secondAttribute="bottom" constant="650" id="5ap-gg-PwH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="09E-tm-N9O" secondAttribute="trailing" constant="56" id="9aX-bl-ErP"/>
+                            <constraint firstItem="09E-tm-N9O" firstAttribute="top" secondItem="m5s-9U-elp" secondAttribute="bottom" constant="175" id="EGd-Ow-oON"/>
                             <constraint firstItem="m5s-9U-elp" firstAttribute="leading" secondItem="rud-Fa-RFh" secondAttribute="leading" constant="100" id="TQb-fm-kSO"/>
                             <constraint firstItem="m5s-9U-elp" firstAttribute="top" secondItem="rud-Fa-RFh" secondAttribute="top" constant="75" id="hYs-iq-I5i"/>
                             <constraint firstItem="rud-Fa-RFh" firstAttribute="trailing" secondItem="m5s-9U-elp" secondAttribute="trailing" constant="100" id="tub-2L-npd"/>
+                            <constraint firstItem="09E-tm-N9O" firstAttribute="leading" secondItem="rlw-f3-U04" secondAttribute="leadingMargin" constant="56" id="z5G-MQ-J1C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MPv-xk-Ocs"/>
+                    <connections>
+                        <outlet property="lblSegue2" destination="09E-tm-N9O" id="49F-Dr-baM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXM-bn-3Df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

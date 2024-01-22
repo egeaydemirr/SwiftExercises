@@ -14,8 +14,9 @@
 		181CA02F2B5A85D90078E0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181CA02E2B5A85D90078E0D0 /* Assets.xcassets */; };
 		181CA0322B5A85D90078E0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181CA0302B5A85D90078E0D0 /* LaunchScreen.storyboard */; };
 		181CA0422B5A8FF70078E0D0 /* HomePageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */; };
+		1845FBA02B5EE2B000DF7D11 /* SegueFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845FB9F2B5EE2B000DF7D11 /* SegueFirstPageViewController.swift */; };
+		1845FBA22B5EE2E200DF7D11 /* SegueSecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845FBA12B5EE2E200DF7D11 /* SegueSecondPageViewController.swift */; };
 		187B5A592B5AA997008E1786 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B5A582B5AA997008E1786 /* FirstPageViewController.swift */; };
-		187B5A5D2B5B0B32008E1786 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */; };
 		18D0DB3D2B5D1F300057646C /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0DB3C2B5D1F300057646C /* Storyboard1.storyboard */; };
 		18D0DB3F2B5D21FA0057646C /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0DB3E2B5D21FA0057646C /* Storyboard2.storyboard */; };
 /* End PBXBuildFile section */
@@ -30,8 +31,9 @@
 		181CA0312B5A85D90078E0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181CA0332B5A85D90078E0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageControllerViewController.swift; sourceTree = "<group>"; };
+		1845FB9F2B5EE2B000DF7D11 /* SegueFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFirstPageViewController.swift; sourceTree = "<group>"; };
+		1845FBA12B5EE2E200DF7D11 /* SegueSecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueSecondPageViewController.swift; sourceTree = "<group>"; };
 		187B5A582B5AA997008E1786 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
-		187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		18D0DB3C2B5D1F300057646C /* Storyboard1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
 		18D0DB3E2B5D21FA0057646C /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +95,8 @@
 			children = (
 				181CA0412B5A8FF70078E0D0 /* HomePageControllerViewController.swift */,
 				187B5A582B5AA997008E1786 /* FirstPageViewController.swift */,
-				187B5A5C2B5B0B32008E1786 /* SecondPageViewController.swift */,
+				1845FB9F2B5EE2B000DF7D11 /* SegueFirstPageViewController.swift */,
+				1845FBA12B5EE2E200DF7D11 /* SegueSecondPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,9 +176,10 @@
 			files = (
 				181CA02A2B5A85D80078E0D0 /* ViewController.swift in Sources */,
 				181CA0262B5A85D80078E0D0 /* AppDelegate.swift in Sources */,
+				1845FBA02B5EE2B000DF7D11 /* SegueFirstPageViewController.swift in Sources */,
 				187B5A592B5AA997008E1786 /* FirstPageViewController.swift in Sources */,
-				187B5A5D2B5B0B32008E1786 /* SecondPageViewController.swift in Sources */,
 				181CA0422B5A8FF70078E0D0 /* HomePageControllerViewController.swift in Sources */,
+				1845FBA22B5EE2E200DF7D11 /* SegueSecondPageViewController.swift in Sources */,
 				181CA0282B5A85D80078E0D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

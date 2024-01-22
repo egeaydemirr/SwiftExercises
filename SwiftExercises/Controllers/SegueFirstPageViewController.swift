@@ -1,23 +1,31 @@
 //
-//  SecondPageViewController.swift
+//  SegueFirstPageViewController.swift
 //  SwiftExercises
 //
-//  Created by Ege Aydemir on 19.01.2024.
+//  Created by Ege Aydemir on 22.01.2024.
 //
 
 import UIKit
 
-class SecondPageViewController: UIViewController {
+class SegueFirstPageController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Second Screen"
-        navigationItem.title = "Baslik 3"
+        navigationItem.title = "Segue First Page"
         navigationItem.prompt = "Prompt 3"
+        config()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var lbl1Segue: UILabel!
+    
+    func config() {
+        lbl1Segue.text = "Segue 1 Label"
+        lbl1Segue.textColor = UIColor.white
+        lbl1Segue.font = UIFont.systemFont(ofSize: 36)
+    }
 
     /*
     // MARK: - Navigation
